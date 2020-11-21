@@ -1,2 +1,2 @@
 # COVID19Trackeer
-Lear through implementation
+REST API based android app in java
