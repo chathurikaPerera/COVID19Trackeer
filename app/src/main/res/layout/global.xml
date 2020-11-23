@@ -1,6 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:rowCount="3"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="70dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Cases"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/hos"/>
+                    <TextView
+                        android:id="@+id/totalCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Active Cases"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/patient2" />
+                    <TextView
+                        android:id="@+id/activeCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Cases"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ambulance3"/>
+                    <TextView
+                        android:id="@+id/newCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recovered cases"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/re"/>
+                    <TextView
+                        android:id="@+id/recoverCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="20dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deaths"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/death"/>
+                    <TextView
+                        android:id="@+id/deathCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:hint="0"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </GridLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
